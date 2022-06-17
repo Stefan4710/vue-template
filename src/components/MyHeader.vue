@@ -16,8 +16,8 @@
       </div>
     </div>
     <div class="nav w-full bg-white">
-      <div class="nav-container container min-w-minxl min-w-minlg min-w-minmd min-w-minsm flex justify-between h-[83px] items-center">
-        <nav class="nav-menu">
+      <div class="nav-container container flex justify-between h-[83px] items-center">
+        <nav class="nav-menu mr-[132px]">
           <ul class="flex items-center">
             <li class="mr-[16px]"><img src="../assets/img/burger.svg" alt=""></li>
             <li class="mr-[22px] text-base"><a href="#">{{$t('message.Living')}}</a></li>
@@ -31,7 +31,7 @@
           <p class="font-semibold text-2xl">{{$t("message.Logo")}}</p>
           <p class="text-xs">{{$t("message.Company group")}}</p>
         </div>
-        <div class="nav-contacts flex items-center">
+        <div class="nav-contacts flex items-center ml-[97px]">
           <div class="location mr-[20px] flex items-center">
             <img src="../assets/img/Vector.svg" alt="locate" class="w-[8.9px] h-[12px] mr-[7px]">
             <p class="text-base">{{$t('message.Minsk region')}}</p>
