@@ -5,26 +5,27 @@ module.exports = {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     screens: {
-      '2xl': { max: '1320px' },
-      xl: { max: '1320px' },
-      lg: { max: '1023px' },
-      md: { max: '767px' },
-      sm: { max: '639px' },
+      'sm': {'min': '640px', 'max': '767px'},
+      // => @media (min-width: 640px and max-width: 767px) { ... }
 
-      minsm: { min: '640px' },
-      minmd: { min: '768px' },
-      minlg: { min: '1024px' },
-      minxl: { min: '1320px' },
+      'md': {'min': '768px', 'max': '1023px'},
+      // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+      'lg': {'min': '1024px', 'max': '1319px'},
+      // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+      'xl': {'min': '1320px'},
+      // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      container: {
+        "xl": "max-width: 1320px",
+        center: true,
+        padding: '15px',
+
+      },
       fontFamily: {
         sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
-      },
-      container: {
-        center: true,
-      },
-      margin: {
-        "28px": "28px"
       },
       colors: {
         "grey": "#F0F2F5"
