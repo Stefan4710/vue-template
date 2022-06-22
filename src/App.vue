@@ -10,3 +10,10 @@
     </main>
   </div>
 </template>
+
+<script>
+
+import '@/css/components/components.css'
+
+</script>
+

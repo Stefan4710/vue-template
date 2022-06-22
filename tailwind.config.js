@@ -8,21 +8,20 @@ module.exports = {
       'sm': {'min': '640px', 'max': '767px'},
       // => @media (min-width: 640px and max-width: 767px) { ... }
 
-      'md': {'min': '768px', 'max': '1023px'},
+      'md': {'min': '798px', 'max': '1053px'},
       // => @media (min-width: 768px and max-width: 1023px) { ... }
 
-      'lg': {'min': '1024px', 'max': '1319px'},
+      'lg': {'min': '1054px', 'max': '1349px'},
       // => @media (min-width: 1024px and max-width: 1279px) { ... }
 
-      'xl': {'min': '1320px'},
+      'xl': {'min': '1350px'},
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
       container: {
-        "xl": "max-width: 1320px",
+        "xl": "max-width: 1350px",
         center: true,
         padding: '15px',
-
       },
       fontFamily: {
         sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
