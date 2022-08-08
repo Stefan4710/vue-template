@@ -9,7 +9,7 @@
   "dependencies": {
     "cssnano": "^5.1.12",
     "vue": "^3.2.37",
-    "vue-i18n": "^9.1.10",
+    "vue-i18n": "^9.2.2",
     "vue-router": "^4.0.16",
     "vue-writer": "^1.2.0"
   },
